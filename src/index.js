@@ -3,13 +3,19 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 
-import App from './components/app';
+import { Router, browserHistory } from 'react-router';
 import reducers from './reducers';
+import routes from './routes';
+
+
+// http://www.blog.com/posts/5
+// hashHistory #posts/5
+// memoryHistory
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-    <App />
+    <Router history={browserHistory} routes={routes} />
   </Provider>
   , document.querySelector('.container'));
