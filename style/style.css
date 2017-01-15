@@ -1,5 +1,27 @@
 body {
 	/*font-family: 'Lato', sans-serif;*/
-	font-size: 24px !important;
+	font-size: 20px !important;
 	font-family: 'Indie Flower', cursive !important;
+}
+
+form {
+	margin-top: 10px;
+}
+
+form a {
+	margin-left: 5px;
+}
+
+.text-help {
+	font-family: 'Lato', sans-serif !important;
+	font-size: 70%;
+
+}
+
+.add-post {
+	margin-top: 10px;
+}
+
+.the-post {
+	margin-top: 10px;
 }
